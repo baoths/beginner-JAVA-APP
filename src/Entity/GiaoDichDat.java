@@ -9,6 +9,8 @@ public class GiaoDichDat extends GiaoDich {
         super(maGD,ngayGD,gia,dt);
         this.loaiD = loaiD;
     }
+    
+    
     @Override
     public double tinhThanhTien() {
         // TODO Auto-generated method stub
@@ -16,5 +18,10 @@ public class GiaoDichDat extends GiaoDich {
             return dt*gia;
         }
         else return dt*gia*1.5;
+    }
+    @Override
+    public String getGD() {
+        // TODO Auto-generated method stub
+        return "{ma gd: " + maGD + ", ngay gd: " + ngayGD + ", loai dat: " + loaiD + ", don gia: " + gia + "}";
     }
 }

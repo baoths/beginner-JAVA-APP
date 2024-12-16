@@ -51,7 +51,7 @@ public class addGDUI {
                 validInput = true;
             } catch (ParseException e) {
                 // TODO Auto-generated catch block
-                sOut.println("vui long nhap lai theo format (dd/mm/yyy).");
+                sOut.println("vui long nhap lai theo format (dd/mm/yyyy).");
             }
         }
         sOut.print(loaigdP);sOut.flush();

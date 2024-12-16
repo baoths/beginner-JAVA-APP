@@ -17,4 +17,9 @@ public abstract class GiaoDich implements Serializable {
         this.dt = dt;
     }
     public abstract double tinhThanhTien();
+
+    public String getmaGD(){
+        return maGD;
+    }
+    public abstract String getGD();
 }

@@ -18,5 +18,10 @@ public class GiaoDichNha extends GiaoDich {
        }
        else return dt*gia*90/100;
     }
+    @Override
+    public String getGD() {
+        // TODO Auto-generated method stub
+        return "{ma gd: " + maGD + ", ngay gd: " + ngayGD + ", loai nha: " + loaiN + ", dia chi: " + dc + ", don gia: " + gia + "}";
+    }
 
 }

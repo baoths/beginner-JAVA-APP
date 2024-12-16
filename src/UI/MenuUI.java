@@ -4,6 +4,8 @@ import java.io.PrintWriter;
 
 import java.util.Scanner;
 
+import Control.PrintGDControl;
+
 public class MenuUI {
     //fields
     private PrintWriter sOut = null;
@@ -12,6 +14,7 @@ public class MenuUI {
     private String cmd = " ";
 
     private addGDUI aGdui = null;
+    private PrintGDControl pGd = null;
 
     //methods
         //constructor
@@ -43,6 +46,10 @@ public class MenuUI {
                 addGD();
                 continue;
             }
+            if ("print".equalsIgnoreCase(cmd)) {
+                printGD();
+                continue;
+            }
 
             if("quit".equalsIgnoreCase(cmd)){
                 break;
@@ -54,12 +61,20 @@ public class MenuUI {
         aGdui.InputInfo();
     }
 
+    private void printGD(){
+        pGd.printGD();
+    }
+
+    public void setPrintGD(PrintGDControl pGd){
+        this.pGd = pGd;
+    }
+
     private void help(){
         sOut.println("~~~~~Console Help Menu~~~~~");
 		//screenOut.flush();
 		sOut.println("[HELP] Ho tro su dung phan mem");
 		sOut.println("[ADD] Them moi SinhVien");
-		//sOut.println("[PRINT] In danh sach SinhVien");
+		sOut.println("[PRINT] In danh sach SinhVien");
         sOut.println("[QUIT] Thoat chuong trinh.");
 		sOut.println("~~~~~Console Help Menu~~~~~");
     }
