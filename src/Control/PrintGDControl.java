@@ -2,6 +2,7 @@ package Control;
 
 import java.util.ArrayList;
 
+import Database.printDAO;
 import Entity.GiaoDich;
 import UI.PrintGDUI;
 

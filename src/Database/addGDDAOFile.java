@@ -13,7 +13,7 @@ import java.util.List;
 
 import Entity.GiaoDich;
 
-public class addGDDAOFile {
+public class addGDDAOFile extends addDAO {
     private File fileData = null;
     private List<GiaoDich> tempData = null;
 

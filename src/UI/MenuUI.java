@@ -71,10 +71,9 @@ public class MenuUI {
 
     private void help(){
         sOut.println("~~~~~Console Help Menu~~~~~");
-		//screenOut.flush();
 		sOut.println("[HELP] Ho tro su dung phan mem");
-		sOut.println("[ADD] Them moi SinhVien");
-		sOut.println("[PRINT] In danh sach SinhVien");
+		sOut.println("[ADD] Them mot giao dich moi");
+		sOut.println("[PRINT] In danh sach giao dich");
         sOut.println("[QUIT] Thoat chuong trinh.");
 		sOut.println("~~~~~Console Help Menu~~~~~");
     }

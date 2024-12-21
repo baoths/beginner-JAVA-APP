@@ -8,7 +8,6 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.util.ArrayList;
 
-import Control.printDAO;
 import Entity.GiaoDich;
 
 public class printGDDAOFile implements printDAO{

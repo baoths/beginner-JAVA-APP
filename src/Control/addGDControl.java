@@ -2,6 +2,7 @@ package Control;
 
 import java.util.Date;
 
+import Database.addDAO;
 import Database.addGDDAOFile;
 import Entity.GiaoDich;
 import Entity.GiaoDichDat;
@@ -9,17 +10,17 @@ import Entity.GiaoDichNha;
 import UI.addGDUIPrompt;
 
 public class addGDControl {
-    private addGDDAOFile daoFile = null;
     private addGDUIPrompt addGDUIP = null;
+    private addDAO aDAO = null;
 
     public addGDControl(){}
     public void setPromptAddGDUI(addGDUIPrompt addGDUIP){
         this.addGDUIP = addGDUIP;
     }
-    public addGDControl(addGDDAOFile daoFile){
-        this.daoFile = daoFile;
+    public addGDControl(addDAO aDao){
+        this.aDAO = aDao;
     }
-
+    
     public void createGD(String maGD, Date ngayGD,String loaiD, float gia, float dt){
         GiaoDichDat gdd = new GiaoDichDat(maGD, ngayGD, loaiD, gia, dt);
         addGD(gdd);
@@ -30,7 +31,7 @@ public class addGDControl {
     }
 
     private void addGD(GiaoDich gd){
-        daoFile.addGD(gd);
+        aDAO.addGD(gd);
         addGDUIP.aPrompt("Them giao dich thanh cong!");
     }
 }

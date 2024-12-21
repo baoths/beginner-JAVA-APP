@@ -18,8 +18,8 @@ public abstract class GiaoDich implements Serializable {
     }
     public abstract double tinhThanhTien();
 
-    public String getmaGD(){
+    /*public String getmaGD(){
         return maGD;
-    }
+    }*/
     public abstract String getGD();
 }
